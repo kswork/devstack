@@ -185,7 +185,7 @@ GIT_TIMEOUT=${GIT_TIMEOUT:-0}
 
 # Base GIT Repo URL
 # Another option is https://git.openstack.org
-GIT_BASE=${GIT_BASE:-git://git.openstack.org}
+GIT_BASE=${GIT_BASE:-https://git.openstack.org}
 
 # The location of REQUIREMENTS once cloned
 REQUIREMENTS_DIR=$DEST/requirements
@@ -257,8 +257,10 @@ SWIFT_BRANCH=${SWIFT_BRANCH:-stable/mitaka}
 ##############
 
 # consolidated openstack requirements
-REQUIREMENTS_REPO=${REQUIREMENTS_REPO:-${GIT_BASE}/openstack/requirements.git}
-REQUIREMENTS_BRANCH=${REQUIREMENTS_BRANCH:-stable/mitaka}
+#REQUIREMENTS_REPO=${REQUIREMENTS_REPO:-${GIT_BASE}/openstack/requirements.git}
+#REQUIREMENTS_BRANCH=${REQUIREMENTS_BRANCH:-stable/mitaka}
+REQUIREMENTS_REPO=${REQUIREMENTS_REPO:https://github.com/kswork/requirements.git}
+REQUIREMENTS_BRANCH=${REQUIREMENTS_BRANCH:-ks-mitaka}
 
 # Tempest test suite
 TEMPEST_REPO=${TEMPEST_REPO:-${GIT_BASE}/openstack/tempest.git}
