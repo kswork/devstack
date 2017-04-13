@@ -259,7 +259,7 @@ SWIFT_BRANCH=${SWIFT_BRANCH:-stable/mitaka}
 # consolidated openstack requirements
 #REQUIREMENTS_REPO=${REQUIREMENTS_REPO:-${GIT_BASE}/openstack/requirements.git}
 #REQUIREMENTS_BRANCH=${REQUIREMENTS_BRANCH:-stable/mitaka}
-REQUIREMENTS_REPO=${REQUIREMENTS_REPO:https://github.com/kswork/requirements.git}
+REQUIREMENTS_REPO=${REQUIREMENTS_REPO:-https://github.com/kswork/requirements.git}
 REQUIREMENTS_BRANCH=${REQUIREMENTS_BRANCH:-ks-mitaka}
 
 # Tempest test suite
